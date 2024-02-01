@@ -49,11 +49,11 @@ go
 select * from Patients
 go
 
-select IDENT_CURRENT('dbo.Cafe') as last_id -- последнй ID в таблице --
+select IDENT_CURRENT('dbo.Patients') as last_id -- ГЇГ®Г±Г«ГҐГ¤Г­Г© ID Гў ГІГ ГЎГ«ГЁГ¶ГҐ --
 go 
-select SCOPE_IDENTITY() AS [SCOPE_IDENTITY];  -- последнй ID в области --
+select SCOPE_IDENTITY() AS [SCOPE_IDENTITY];  -- ГЇГ®Г±Г«ГҐГ¤Г­Г© ID Гў Г®ГЎГ«Г Г±ГІГЁ --
 go  
-select @@IDENTITY AS [@@IDENTITY];  -- любой последний созданный ID --
+select @@IDENTITY AS [@@IDENTITY];  -- Г«ГѕГЎГ®Г© ГЇГ®Г±Г«ГҐГ¤Г­ГЁГ© Г±Г®Г§Г¤Г Г­Г­Г»Г© ID --
 go 
 
 if OBJECT_ID(N'Hospitals', N'U') is not null
